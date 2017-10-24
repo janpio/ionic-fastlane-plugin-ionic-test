@@ -1,6 +1,6 @@
-# ionic-fastlane-plugin-upgrade_super_old_xcode_project-test
+# ionic-fastlane-plugin-ionic-test
 
-Ionic test project for fastlane plugin [`upgrade_super_old_xcode_project`](https://github.com/ionic-zone/fastlane-plugin-upgrade_super_old_xcode_project).
+Ionic test project for fastlane plugin [`ionic`](https://github.com/ionic-zone/fastlane-plugin-ionic).
 
-1. Run `fastlane upgrade_xcode_project`
-2. Check file changes in `platforms/ios`
+1. Run `fastlane android build_debug` or `fastlane ios build_debug`
+2. Check file changes in `platforms/android` or `platforms/ios`
