@@ -35,6 +35,11 @@ xcode-select --install
 fastlane ios upgrade_xcode_project
 ```
 Upgrade the Xcode project to Xcode 8
+### ios build_debug
+```
+fastlane ios build_debug
+```
+Build Debug
 ### ios test
 ```
 fastlane ios test
@@ -52,6 +57,15 @@ This will also make sure the profile is up to date
 fastlane ios release
 ```
 Deploy a new version to the App Store
+
+----
+
+## Android
+### android build_debug
+```
+fastlane android build_debug
+```
+Build Debug
 
 ----
 
