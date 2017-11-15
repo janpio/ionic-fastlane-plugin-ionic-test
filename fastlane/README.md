@@ -40,6 +40,11 @@ Upgrade the Xcode project to Xcode 8
 fastlane ios build_debug
 ```
 Build Debug
+### ios build_debug_prod
+```
+fastlane ios build_debug_prod
+```
+Build Debug Prod
 ### ios test
 ```
 fastlane ios test
@@ -66,6 +71,16 @@ Deploy a new version to the App Store
 fastlane android build_debug
 ```
 Build Debug
+### android build_debug_prod
+```
+fastlane android build_debug_prod
+```
+Build Debug Prod
+### android build_release
+```
+fastlane android build_release
+```
+Build Release
 
 ----
 

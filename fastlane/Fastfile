@@ -26,7 +26,7 @@ platform :ios do
   lane :upgrade_xcode_project do
     team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
     xcodeprojpath = "platforms/ios/MyApp.xcodeproj"
-  
+
     upgrade_super_old_xcode_project(
       path: xcodeprojpath,
       team_id: team_id
@@ -38,6 +38,16 @@ platform :ios do
     ionic(
       platform: 'ios',
       release: false,
+      type: 'development'
+    )
+  end
+
+  desc "Build Debug Prod"
+  lane :build_debug_prod do
+    ionic(
+      platform: 'ios',
+      release: false,
+      prod: true,
       type: 'development'
     )
   end
@@ -91,6 +101,23 @@ platform :android do
     ionic(
       platform: 'android',
       release: false
+    )
+  end
+
+  desc "Build Debug Prod"
+  lane :build_debug_prod do
+    ionic(
+      platform: 'android',
+      release: false,
+      prod: true
+    )
+  end
+
+  desc "Build Release"
+  lane :build_release do
+    ionic(
+      platform: 'android',
+      release: true
     )
   end
 end
