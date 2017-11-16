@@ -45,6 +45,11 @@ Build Debug
 fastlane ios build_debug_prod
 ```
 Build Debug Prod
+### ios build_release
+```
+fastlane ios build_release
+```
+Build Release
 ### ios test
 ```
 fastlane ios test

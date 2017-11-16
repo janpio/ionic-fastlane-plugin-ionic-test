@@ -52,6 +52,15 @@ platform :ios do
     )
   end
 
+  desc "Build Release"
+  lane :build_release do
+    ionic(
+      platform: 'ios',
+      release: true,
+      prod: true
+    )
+  end
+
   desc "Runs all the tests"
   lane :test do
     scan
@@ -117,7 +126,13 @@ platform :android do
   lane :build_release do
     ionic(
       platform: 'android',
-      release: true
+      release: true,
+      prod: true,
+
+      keystore_path: '../Dropbox/zaehlerstand.keystore',
+      keystore_alias: 'Zaehlerstand',
+      keystore_password: '168597',
+      key_password: '168597'
     )
   end
 end
